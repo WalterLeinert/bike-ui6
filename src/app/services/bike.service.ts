@@ -18,7 +18,7 @@ export class BikeService {
   }
 
   public findById(id: number): Observable<Bike> {
-    return this.http.get<Bike>('/server/api/v1/bikes' + id);
+    return this.http.get<Bike>('/server/api/v1/bikes/' + id);
   }
 
   public create(bike: Bike): Observable<Bike> {
