@@ -13,11 +13,11 @@ export class BikeService {
   constructor(private http: HttpClient) {
   }
 
-  public getBikes(): Observable<Bike[]> {
+  public find(): Observable<Bike[]> {
     return this.http.get<Bike[]>('/server/api/v1/bikes');
   }
 
-  public getBike(id: number): Observable<Bike> {
+  public findById(id: number): Observable<Bike> {
     return this.http.get<Bike>('/server/api/v1/bikes' + id);
   }
 
