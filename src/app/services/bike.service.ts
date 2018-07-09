@@ -15,11 +15,17 @@ export class BikeService {
   }
 
   public find(): Observable<Bike[]> {
-    return this.http.get<Bike[]>('/server/api/v1/bikes');
+    const token = localStorage.getItem('access_token');
+    return this.http.get<Bike[]>('/server/api/v1/bikes',
+      { headers: new HttpHeaders().set('Authorization', 'Bearer ' + token) }
+    );
   }
 
   public findById(id: number): Observable<Bike> {
-    return this.http.get<Bike>('/server/api/v1/bikes/' + id);
+    const token = localStorage.getItem('access_token');
+    return this.http.get<Bike>('/server/api/v1/bikes/' + id,
+      { headers: new HttpHeaders().set('Authorization', 'Bearer ' + token) }
+    );
   }
 
   public create(bike: Bike): Observable<Bike> {
