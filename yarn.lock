@@ -75,7 +75,7 @@
     typescript "~2.9.1"
     webpack-sources "^1.1.0"
 
-"@angular-devkit/core@0.6.8":
+"@angular-devkit/core@0.6.8", "@angular-devkit/core@^0.6.8":
   version "0.6.8"
   resolved "http://localhost:4873/@angular-devkit%2fcore/-/core-0.6.8.tgz#3b09d97bd2588f0091df11921f7ed772431806aa"
   dependencies:
@@ -869,6 +869,10 @@ boom@2.x.x:
   resolved "http://localhost:4873/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
   dependencies:
     hoek "2.x.x"
+
+bootstrap@^4.1.1:
+  version "4.1.1"
+  resolved "http://localhost:4873/bootstrap/-/bootstrap-4.1.1.tgz#3aec85000fa619085da8d2e4983dfd67cf2114cb"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
